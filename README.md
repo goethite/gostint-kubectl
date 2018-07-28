@@ -1,3 +1,3 @@
-# goswim-kubectl
+# gostint-kubectl
 
-see the [goswim](https://github.com/goethite/goswim) parent project
+see the [gostint](https://github.com/goethite/gostint) parent project
