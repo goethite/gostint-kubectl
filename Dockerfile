@@ -15,5 +15,4 @@ RUN \
   wget -qO - https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get | bash
 
 WORKDIR /tmp
-ENV YAMLSH_SHELL=/bin/sh
 ENTRYPOINT ["/gostint-wrapper.sh"]
