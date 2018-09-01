@@ -8,4 +8,6 @@ fi
 
 umask 077
 echo "$YAMLSH_KUBECONFIG_BASE64" | base64 -d > /tmp/config.yml
-KUBECONFIG=/tmp/config.yml kubectl $*
+
+RUNCMD=${RUNCMD:-kubectl}
+KUBECONFIG=/tmp/config.yml $RUNCMD $*
