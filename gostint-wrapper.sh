@@ -10,4 +10,4 @@ umask 077
 echo "$YAMLSH_KUBECONFIG_BASE64" | base64 -d > /tmp/config.yml
 
 RUNCMD=${RUNCMD:-kubectl}
-KUBECONFIG=/tmp/config.yml $RUNCMD $*
+KUBECONFIG=/tmp/config.yml $RUNCMD "$@"

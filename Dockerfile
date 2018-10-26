@@ -6,6 +6,7 @@
 
 FROM lachlanevenson/k8s-kubectl:latest
 COPY gostint-wrapper.sh /gostint-wrapper.sh
+COPY gostint_image.yml /gostint_image.yml
 RUN \
   apk add -q --no-cache wget bash curl openssl && \
   wget -qO - \
